@@ -152,3 +152,9 @@ body{
     font-size: 25px;
     font-weight: 700;
 }
+
+
+feedbody{
+    border-width: 2px;
+    border-color: #0D7377;
+}

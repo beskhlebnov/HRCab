@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -23,14 +23,23 @@
     <div class="mb-3" th:align="CENTER">
         <div class="col-sm-6">
 
-            <label for="username" class="col-sm-3 col-form-label text-white text">Имя пользователя: </label>
+            <label for="username" class="col-sm-3 col-form-label text-white text">Эл почта: </label>
             <input type="text" name="username" class="form-control control" id="username"/><br/>
 
             <label for="password" class="col-sm-3 col-form-label text-white text">Пароль:</label>
             <input type="password" class="form-control control" name="password" id="password"/><br/>
 
-            <label for="nickname" class="col-sm-3 col-form-label text-white text">Отображаемое имя: </label>
-            <input type="text" class="form-control control" name="nickname" id="nickname"/><br/>
+            <label for="firstName" class="col-sm-3 col-form-label text-white text">Фамилия: </label>
+            <input type="text" class="form-control control" name="firstName" id="firstName"/><br/>
+
+            <label for="lastName" class="col-sm-3 col-form-label text-white text">Имя: </label>
+            <input type="text" class="form-control control" name="lastName" id="lastName"/><br/>
+
+            <label for="patronymic" class="col-sm-3 col-form-label text-white text">Отчетсво: </label>
+            <input type="text" class="form-control control" name="patronymic" id="patronymic"/><br/>
+
+            <label for="about" class="col-sm-3 col-form-label text-white text">О себе: </label>
+            <textarea type="text" class="form-control control" name="about" id="about"></textarea><br/>
 
             <p>
                 <br>

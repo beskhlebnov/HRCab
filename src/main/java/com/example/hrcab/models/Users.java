@@ -15,6 +15,8 @@ import org.springframework.security.core.userdetails.UserDetails;
 import java.util.Collection;
 import java.util.List;
 
+
+//Модель пользователя
 @Entity
 @Data
 @NoArgsConstructor(access=AccessLevel.PUBLIC, force=true)
@@ -39,6 +41,10 @@ public class Users implements UserDetails{
             roles.add(new SimpleGrantedAuthority("ROLE_HR"));
         }
         return roles;
+    }
+
+    public String getFio(){
+        return this.firstName+" "+this.lastName+" "+this.patronymic;
     }
 
     @Override

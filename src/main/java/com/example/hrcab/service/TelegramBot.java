@@ -14,6 +14,8 @@ import org.telegram.telegrambots.meta.exceptions.TelegramApiException;
 import java.util.ArrayList;
 import java.util.List;
 
+
+//Телеграм бот
 @Component
 public class TelegramBot extends TelegramLongPollingBot {
 
@@ -38,7 +40,7 @@ public class TelegramBot extends TelegramLongPollingBot {
             long userId = update.getCallbackQuery().getFrom().getId();
             SendMessage message = new SendMessage();
             message.setChatId(String.valueOf(userId));
-            message.setText("http://localhost:8080/feedback/"+update.getCallbackQuery().getId());
+            message.setText("http://localhost:8080/feedback/"+update.getCallbackQuery().getData());
             message.setParseMode(ParseMode.MARKDOWNV2);
             try {execute(message);}
             catch (TelegramApiException e){

@@ -1,15 +1,15 @@
 package com.example.hrcab.models;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.*;
 import lombok.AccessLevel;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.List;
+
+//Модель вакансии
 @Entity
 @Data
 @AllArgsConstructor
@@ -25,4 +25,7 @@ public class Vacancy {
     private String description;
 
     private String requirements;
+
+    @Transient
+    private List<Feedback> feeds;
 }
