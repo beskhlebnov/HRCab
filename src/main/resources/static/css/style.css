@@ -1,0 +1,154 @@
+
+
+.mr10 {
+    margin-right: 10px;
+}
+
+hr{
+    margin: 0;
+    border: solid;
+    opacity: 100%;
+}
+
+.d-flex{
+    gap:20px;
+}
+
+.bg-spec{
+    background: #3f3c3c;
+    border-color: #0D7377;
+    margin-bottom: 10px;
+}
+
+.btn-close{
+    background: none;
+}
+
+.rnd{
+    color: white;
+    background: none;
+}
+.rnd:hover{color: #f06000;}
+
+
+.digit {
+    font-size: 150px;
+    color: #fff;
+}
+
+.txt {
+    font-size: 30px;
+    color: #fffcd6;
+}
+
+
+.fixedw{
+    width: fit-content;
+}
+
+.response{
+    text-decoration: none;
+}
+
+.response:hover{
+    color: #0a3622;
+}
+
+
+.btn-reg{
+    font-family: Tahoma;
+    color: #0D7377;
+    border-style: solid ;
+    background: #D9D9D9;
+    border-color: #0D7377;
+    border-radius: 210px;
+    border-width: 6px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.btn-reg:hover{
+    font-family: Tahoma;
+    color: #D9D9D9;
+    background: #0D7377;
+    border-color: #D9D9D9;
+    border-radius: 210px;
+    border-width: 6px;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.control{
+    border-radius: 94px ;
+}
+
+.text{
+    font-family: Tahoma;
+}
+
+
+.blue-light{
+    box-sizing: border-box;
+
+    position: absolute;
+    width: 1309px;
+    height: 1217px;
+
+    background: radial-gradient(50% 50% at 50% 50%, #0D7377 0%, #0D7377 35.1%, #000000 100%);
+    mix-blend-mode: lighten;
+    border: 1px solid #000000;
+}
+
+body{
+    background: #000000;
+    font-family: Tahoma
+}
+
+.goreg:hover{
+    text-decoration: underline white;
+}
+
+.bg{
+    background: #000000;
+}
+
+.goadd{
+    width: auto;
+    text-decoration: underline #3f3c3c;
+}
+
+.goadd:hover{
+    font-family: Tahoma;
+    color: #D9D9D9;
+    background: #0D7377;
+    text-decoration: underline #0D7377;
+    border-color: #D9D9D9;
+}
+
+.spec{
+    background: black;
+    border-color: #0D7377;
+}
+
+.btn-public{
+    font-family: Tahoma;
+    color: #0D7377;
+    border-style: solid ;
+    background: #D9D9D9;
+    border-color: #0D7377;
+    border-radius: 210px;
+    border-width: 3px;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.btn-public:hover{
+    font-family: Tahoma;
+    color: #D9D9D9;
+    background: #0D7377;
+    border-color: #D9D9D9;
+    border-radius: 210px;
+    border-width: 3px;
+    font-size: 25px;
+    font-weight: 700;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <title>Авторизация</title>
+</head>
+
+<body class="bg-dark">
+
+
+<h1 class="display-6 text-white text-center"><a class="navbar-brand" href="https://rnd-soft.ru/"><img style="width: 100px; height: 100px" src="/img/logoSpec.png"></a>   <i class="fa-brands fa-d-and-d"></i>   <a class="navbar-brand" href="/about">LEGION</a></h1>
+
+<form method="POST" th:action="@{/Login}" id="loginFrom">
+    <div class="mb-3" th:align="CENTER">
+        <br>
+        <div class="col-sm-6" style="padding: 25px; border-radius: 25px">
+
+            <label for="username" class="col-sm-3 col-form-label text-white text">Имя пользователя: </label>
+            <input type="text" class="form-control control" name="username" id="username"/><br/>
+
+            <label for="password" class="col-sm-3 col-form-label text-white text">Пароль: </label>
+            <input type="password" class="form-control control" name="password" id="password"/><br/>
+
+            <p>
+                <br>
+                <button type="submit" class="btn-reg">Войти
+                </button>
+                <br>
+            </p>
+            <div th:if="${param.error}" class="text-white">Проверьте имя пользователя и пароль!</div>
+            <br>
+
+            <a th:href="@{/Registration}" class="nav-link text-white"><button type="button" class="btn text-white goreg">Нет аккаунта?</button></a>
+            <div class="ms-auto blue-light"></div>
+        </div>
+    </div>
+</form>
+
+
+
+<script src="https://kit.fontawesome.com/6e5d380cb8.js" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
